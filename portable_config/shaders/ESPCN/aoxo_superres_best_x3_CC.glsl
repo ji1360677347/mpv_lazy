@@ -18,7 +18,7 @@ License inherited from upstream
 //!HOOK MAIN
 //!BIND HOOKED
 //!SAVE REF
-//!DESC [aoxo_superres_best_x3_R2] REF save
+//!DESC [aoxo_superres_best_x3_CC] REF save
 //!WIDTH HOOKED.w 3.0 *
 //!HEIGHT HOOKED.h 3.0 *
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -30,7 +30,7 @@ vec4 hook() {
 //!HOOK MAIN
 //!BIND HOOKED
 //!SAVE conv1
-//!DESC [aoxo_superres_best_x3_R2] conv1+ReLU
+//!DESC [aoxo_superres_best_x3_CC] conv1+ReLU
 //!WIDTH HOOKED.w 4.0 *
 //!HEIGHT HOOKED.h 4.0 *
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -545,7 +545,7 @@ void hook() {
 //!HOOK MAIN
 //!BIND conv1
 //!SAVE conv2
-//!DESC [aoxo_superres_best_x3_R2] conv2+ReLU
+//!DESC [aoxo_superres_best_x3_CC] conv2+ReLU
 //!WIDTH HOOKED.w 4.0 *
 //!HEIGHT HOOKED.h 2.0 *
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -1932,7 +1932,7 @@ void hook() {
 //!BIND conv2
 //!BIND HOOKED
 //!SAVE FIN_UNC
-//!DESC [aoxo_superres_best_x3_R2] conv3 + PixelShuffle x3
+//!DESC [aoxo_superres_best_x3_CC] conv3 + PixelShuffle x3
 //!WIDTH HOOKED.w 3 *
 //!HEIGHT HOOKED.h 3 *
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -2579,7 +2579,7 @@ void hook() {
 //!HOOK MAIN
 //!BIND FIN_UNC
 //!SAVE FIN_BLURH
-//!DESC [aoxo_superres_best_x3_R2] fin blur-h
+//!DESC [aoxo_superres_best_x3_CC] fin blur-h
 //!WIDTH FIN_UNC.w
 //!HEIGHT FIN_UNC.h
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -2599,7 +2599,7 @@ vec4 hook() {
 //!HOOK MAIN
 //!BIND FIN_BLURH
 //!SAVE FIN_BLURRED
-//!DESC [aoxo_superres_best_x3_R2] fin blur-v
+//!DESC [aoxo_superres_best_x3_CC] fin blur-v
 //!WIDTH FIN_BLURH.w
 //!HEIGHT FIN_BLURH.h
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -2619,7 +2619,7 @@ vec4 hook() {
 //!HOOK MAIN
 //!BIND REF
 //!SAVE REF_BLURH
-//!DESC [aoxo_superres_best_x3_R2] ref blur-h
+//!DESC [aoxo_superres_best_x3_CC] ref blur-h
 //!WIDTH REF.w
 //!HEIGHT REF.h
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -2639,7 +2639,7 @@ vec4 hook() {
 //!HOOK MAIN
 //!BIND REF_BLURH
 //!SAVE REF_BLURRED
-//!DESC [aoxo_superres_best_x3_R2] ref blur-v
+//!DESC [aoxo_superres_best_x3_CC] ref blur-v
 //!WIDTH REF_BLURH.w
 //!HEIGHT REF_BLURH.h
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
@@ -2661,7 +2661,7 @@ vec4 hook() {
 //!BIND FIN_BLURRED
 //!BIND REF_BLURRED
 //!BIND REF
-//!DESC [aoxo_superres_best_x3_R2] merge
+//!DESC [aoxo_superres_best_x3_CC] merge
 //!WIDTH FIN_UNC.w
 //!HEIGHT FIN_UNC.h
 //!WHEN OUTPUT.w HOOKED.w 2.200 * > OUTPUT.h HOOKED.h 2.200 * > *
